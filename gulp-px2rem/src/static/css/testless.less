@@ -1,0 +1,72 @@
+
+/*函数表达式*/
+.wrap () {
+    text-wrap: wrap;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    word-wrap: break-word;
+}
+
+pre { 
+    .wrap; 
+    div {
+        width: 100px;
+    }
+}
+
+
+/*mixin*/
+.mixin (dark, @color) {
+    color: darken(@color, 10%);
+}
+.mixin (light, @color) {
+    color: lighten(@color, 20%);
+}
+.mixin (@_, @color) {
+    display: block;
+}
+
+@switch: dark;
+
+.class {
+  .mixin(@switch, #888);
+}
+
+
+
+/*参数形式*/
+.border-radius (@radius) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+
+#header {
+    .border-radius(4px);
+}
+
+.button {
+    .border-radius(6px);  
+}
+
+
+/*嵌套形式*/
+#header {
+    color: black;
+    .navigation {
+        font-size: 12px;
+    }
+    .logo {
+        width: 300px;
+        &:hover { text-decoration: none }
+    }
+}
+
+.bordered {
+    &.float {
+        float: left; 
+    }
+    .top {
+        margin: 5px; 
+    }
+}

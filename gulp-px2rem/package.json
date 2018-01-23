@@ -1,0 +1,51 @@
+{
+  "name": "tools-cli-gulp-px2rem",
+  "version": "1.0.0",
+  "description": "打包工具实例之gulp转px2rem",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gulp lint",
+    "watch": "gulp watch",
+    "build": "cross-env NODE_ENV=production gulp build"
+  },
+  "author": "peter",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+
+    "babel-preset-es2015": "^6.18.0",
+    "cross-env": "^3.1.3",
+    "eslint": "^3.8.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-friendly-formatter": "^2.0.6",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "generate-weapp-page": "^0.1.3",
+
+    "autoprefixer": "^7.2.5",
+    "cssnext": "^1.8.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-less": "^3.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "inquirer": "^1.2.2",
+    "postcss": "^6.0.16",
+    "postcss-px2rem": "^0.3.0",
+    "postcss-pxtorem": "^4.0.1",
+    "precss": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  }
+}

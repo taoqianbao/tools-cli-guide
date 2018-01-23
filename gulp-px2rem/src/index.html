@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="format-detection" content="telephone=no">
+    <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, no-store, must-revalidate">
+    <meta HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1999 08:21:57 GMT">
+    <title>今晚八点半</title>
+    <link href="./static/css/reset.css?v=0.02" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="#" />
+    <script src="./static/js/index.js?v=0.02"></script>
+    <script src="./static/js/jquery.min.js?v=0.02"></script>
+    
+    <style>
+        body {
+            background-color: rgb(37,187,253);
+            width: 100%;
+            height: 100%;
+            
+        }
+        .content-title {
+            padding: 1.2rem 1.4rem 0.2rem 1.4rem;
+            text-align: center;
+        }
+        .content-tips {
+            font-size: 0.5rem;
+            margin-top: 0.8rem;
+        }
+        .content-center {
+            padding: 0.6rem 1.8rem;
+        }
+        .btn-lifeagain {
+            font-size: 0.5rem;
+            text-align: center;
+            height: 1.3rem;
+            line-height: 1.3rem;
+            background-color: rgb(254,245,55);
+            border-radius: 50px;
+            border: 1px solid;
+            display: block;
+        }
+        .avatar-item {
+            display: flex;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            text-align: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .avatar-item li {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .avatar-item-img {
+            width: 65px;
+            height: 65px;
+            box-shadow: 0 0 2px 0.05rem rgb(5, 249, 233), 0 0 0 0.12rem rgb(239, 255, 255);
+            border-radius: 50%;
+        }
+        .content-rules {
+            padding: 0.1rem;
+            font-size: 0.36rem;
+            border: 1px solid;
+            margin: 1.5rem 0.5rem 2rem 0.5rem;
+            border-radius: 5px;
+        }
+        .content-rules-inner {
+            background-color: rgb(180, 221, 227);
+            line-height: 0.7rem;
+            padding: 0.3rem;
+            border-radius: 5px;
+        }
+        .content-rules-titile {
+            font-weight: 500;
+        }
+        .content-rules-number {
+            width: 0.5rem;
+            height: 0.5rem;
+            float: left;
+            background-color: rgb(249, 210, 48);
+            border-radius: 50%;
+            text-align: center;
+            position: absolute;
+            margin-top: 0.1rem;
+            line-height: 0.5rem;
+            display: block;
+        }
+        .content-rules-section {
+            margin-top: 0.1rem;
+        }
+        .content-rules-text {
+            text-indent: 0.7rem;
+        }
+        .content-bottom {
+            position: fixed;
+            bottom: 0;
+        }
+        .content-bottom-img {
+            width: 100%;
+            font-size: 0;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="content-title">
+            <img width="100%" src="./static/img/title.png">
+            <p class="content-tips">点赞帮助好友复活，一起赢大奖</p>
+        </div>
+        <div class="content-center">
+            <a id="relive" class="btn-lifeagain">点赞帮好友复活</a>
+        </div>
+        <div>
+            <ul class="avatar-item">
+                <li>
+                    <img class="avatar-item-img"  src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eop9WylZJicLQ8PVs8yMAfKkicmdUPraCKT31xXSiadmsjzuIB2ic0unYYpS0ZyXQpPVYfAg9ouOAnSsQ/0" alt="">
+                </li>
+                <li>
+                    <img class="avatar-item-img" src="./static/img/default-avatar.png" alt="">
+                </li>
+                <li>
+                    <img class="avatar-item-img" src="./static/img/default-avatar.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="content-rules">
+            <div class="content-rules-inner">
+                <p class="content-rules-titile">规则说明：</p>
+                <div class="content-rules-section">
+                    <span class="content-rules-number">1</span>
+                    <div class="content-rules-text">
+                        今晚八点半是一款直播互动娱乐APP，复活卡可以在互动淘汰后继续参与，瓜分10000元奖金
+                    </div>
+                </div>
+                <div class="content-rules-section">
+                    <span class="content-rules-number">2</span>
+                    <div class="content-rules-text">
+                        集齐3个赞即可获得1张复活卡
+                    </div>
+                </div>
+                <div class="content-rules-section">
+                    <div class="content-rules-number">3</div>
+                    <div class="content-rules-text">
+                        所有参与本次活动的用户均可在今晚八点半APP中领取现金奖励
+                    </div>
+                </div>
+                <div class="content-rules-section">
+                    <div class="content-rules-number">4</div>
+                    <div class="content-rules-text">
+                        本活动最终解释权归今晚八点半APP所有
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-bottom">
+            <img class="content-bottom-img" src="./static/img/yun.png" alt="">
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    $(function(){
+        // alert(navigator.appVersion, navigator.appName )
+        // alert(browser.versions)
+        // alert(navigator.userAgent)
+        $("#relive").click(function(){
+            window.location.href = './download.html';
+        })
+    })
+</script>
+
+</html>

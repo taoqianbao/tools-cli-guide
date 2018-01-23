@@ -1,0 +1,11 @@
+.selector {
+    width: 150px;
+    height: 64px; /*rem*/
+    font-size: 18px; /*默认写上dpr为1的fontSize/
+    border: 1px solid #ddd; /*no*/
+}
+
+.test { 
+    background: black; 
+    font-size: 16px; /*px*/
+}
